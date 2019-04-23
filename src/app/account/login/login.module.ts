@@ -7,7 +7,13 @@ import { LoginComponent } from './login.component';
     exports: [LoginComponent, RouterModule],
     imports: [
         CommonModule,
-        RouterModule.forChild([{ path: '', component: LoginComponent }]),
+        RouterModule.forChild([
+            { path: '', redirectTo: 'abc', pathMatch: 'full' },
+            { path: 'abc', component: LoginComponent }
+        ])
+
+        // { path: "", redirectTo: 'main', pathMatch: 'full' },
+        // { path: "main", loadChildren: "./main/main.module#MainModule" },
     ]
 
 })

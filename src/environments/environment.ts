@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   hmr: false,
-  api_url: "http://18.216.120.11:8080/api/" 
+  api_url: ""
 };
 
 /*

@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: false,
+  hmr: false,
+  api_url: ""
 };
